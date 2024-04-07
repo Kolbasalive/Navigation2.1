@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/badgemiit"
+                android:src="@drawable/badge_miit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.181"
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="-40dp"
-                android:gravity="left"
+                android:textAlignment="viewStart"
                 android:text="@string/name_university"
                 android:textColor="@color/white"
                 android:textSize="30sp"
@@ -53,13 +53,12 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="457dp"
-            android:src="@drawable/badgemenu"
-            android:onClick="onImageClick"
+            android:src="@drawable/badge_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.954"
@@ -68,7 +67,7 @@
             app:layout_constraintVertical_bias="0.379" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+            android:id="@+id/constraintLayoutSchedule"
             android:layout_width="340dp"
             android:layout_height="120dp"
             android:background="@color/purple"
@@ -83,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:src="@drawable/badgeschedule"
+                android:src="@drawable/badge_schedule"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.055"
@@ -96,8 +95,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:gravity="left"
-                android:text="@string/name_schedule"
+                android:gravity="start|center_vertical"
+                android:text="@string/name_office_schedule"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -108,10 +107,10 @@
 
             <ImageView
                 android:id="@+id/imageBadgeSchedule2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/imageschedule"
+                android:src="@drawable/image_schedule"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textSchedule"
@@ -128,7 +127,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutSchedule"
             app:layout_constraintVertical_bias="0.046">
 
 
@@ -138,7 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:contentDescription="TODO"
-                android:src="@drawable/badgenav"
+                android:src="@drawable/badge_nav"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.055"
@@ -152,11 +152,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:gravity="left"
-                android:text="@string/name_schedule"
+                android:text="@string/name_navigation"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageBadgeNav"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -164,13 +163,14 @@
 
             <ImageView
                 android:id="@+id/imageImageNav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_centerInParent="true"
                 android:layout_marginStart="-20dp"
-                android:src="@drawable/imagenav"
+                android:src="@drawable/image_nav"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.753"
                 app:layout_constraintStart_toEndOf="@+id/textNav"
                 app:layout_constraintTop_toTopOf="parent" />
 

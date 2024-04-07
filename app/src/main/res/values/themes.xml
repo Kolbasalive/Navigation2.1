@@ -3,8 +3,17 @@
     <style name="Base.Theme.Navigation21" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+       <item name="android:fontFamily">@font/navigo_medium</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
 
     <style name="Theme.Navigation21" parent="Base.Theme.Navigation21" />
+    <style name="Theme.Navigation21.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Navigation21.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Navigation21.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
